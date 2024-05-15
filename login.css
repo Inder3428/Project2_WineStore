@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f2eb;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 80px; /* Add padding-top to avoid content being hidden behind the fixed navbar */
+}
+
+header {
+  width: 100%;
+  background-color: #3c3024;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navbar Styles */
+.minimal-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.nav-link {
+  color: #d0b49e;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease;
+  padding-bottom: 15px;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #c4a18a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.container1 {
+  background-color: rgba(60, 48, 37, 0.9);
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 360px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.form-control input:focus + label,
+.form-control input:valid + label {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: lightblue;
+}
+
+.btn {
+  background-color: lightblue;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.text {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.text a {
+  color: lightblue;
+}

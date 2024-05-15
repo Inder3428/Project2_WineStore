@@ -1,0 +1,245 @@
+/* General Styles */
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    /* Elegant serif font for general text */
+    background: #FAF0E6;
+    color: #132044;
+    /* Deep wine red for text */
+}
+
+header {
+    background: #313b5b;
+    /* Dark burgundy, similar to red wine */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    /* Classic style for headings */
+}
+
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #313b5b;
+    /* Dark burgundy */
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    /* Consistent font for navigation */
+}
+
+.navbar li a:hover {
+    background-color: #132044;
+    /* Slightly darker red for hover */
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 8px #bbb;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%; /* This ensures all products have the same height */
+}
+
+.product:hover {
+    box-shadow: 0 0 15px #aaa;
+}
+
+.product-image {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 250px; /* Adjust this value as needed */
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product h3,
+.product p {
+    margin: 5px 0;
+    font-family: 'Merriweather', serif;
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #132044;
+    /* Dark red for titles */
+}
+
+.product p {
+    font-size: 16px;
+    color: #132044;
+    /* Lighter red for price */
+}
+
+
+.add-to-cart {
+    background-color: #132044;
+    /* Dark red, similar to burgundy wine */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #313b5b;
+    /* Slightly lighter red */
+}
+
+.cart {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.cart h2 {
+    font-size: 22px;
+    color: #313b5b;
+    /* Dark burgundy */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.cart-item {
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-from-cart {
+    background-color: #132044;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.remove-from-cart:hover {
+    background-color: #313b5b;
+}
+
+.cart-footer {
+    text-align: right;
+}
+
+#checkout-button {
+    background-color: #132044;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#checkout-button:hover {
+    background-color: #313b5b;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2,
+.modal-content h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    font-family: 'Playfair Display', serif;
+}
+
+.payment-icon {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+#apple-pay {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 20px;
+    background-color: #313b5b;
+    /* Dark burgundy, consistent with the header */
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #132044;
+    /* Slightly darker red for a subtle border */
+    font-family: 'Merriweather', serif;
+    /* Elegant serif font for readability */
+}
+
+footer p {
+    margin: 0;
+    /* Removes default margin for clean spacing */
+}
